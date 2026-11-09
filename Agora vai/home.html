@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <!-- Configurações básicas da página inicial -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+</head>
+<!-- Estilos do Bootstrap e do site -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<link rel="stylesheet" href="./logo.css">
+
+<body class="home-page">
+  <!-- Menu de navegação -->
+  
+  <ul class="nav justify-content-center home-nav">
+    <li class="nav-item">
+      <a class="nav-link active" aria-current="page" href="./home.html">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link active" aria-current="page" href="./importancia.html">Importância da leitura</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="./formulario.html">Formulario para o clube do livro</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="./clube do livro.html">Clube do livro</a>
+    </li>
+  </ul>
+  <!-- Carrossel de imagens da página inicial -->
+ <div id="carouselStackedIndicators" class="carousel slide">
+  <div class="carousel-inner rounded-5">
+    <div class="carousel-item active">
+      <img src="./Clube do livro gratuito.jpg" class="carousel-img" alt="Clube do livro gratuito">
+    </div>
+    <div class="carousel-item">
+      <img src="./achadinhos.jpg" class="carousel-img" alt="Achadinhos">
+    </div>
+
+     <div class="carousel-item">
+      <img src="./o.jpg" class="carousel-img" alt="Clube do livro">
+    </div>
+     <div class="carousel-item">
+      <img src="./recomendações.jpg" class="carousel-img" alt="Recomendações de leitura">
+    </div>
+     <div class="carousel-item">
+      <img src="./Novidades no mundo literário.jpg" class="carousel-img" alt="Novidades no mundo literário">
+    </div>
+     <div class="carousel-item">
+      <img src="./Se inscreva aqui no.jpg" class="carousel-img" alt="Inscreva-se no clube do livro">
+    </div>
+  </div>
+  <div class="d-flex justify-content-between align-items-center">
+    <div>
+      <button class="btn-icon btn-sm" type="button" data-bs-target="#carouselStackedIndicators" data-bs-slide="prev">
+        <span class="carousel-icon-prev" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="btn-icon btn-sm" type="button" data-bs-target="#carouselStackedIndicators" data-bs-slide="next">
+        <span class="carousel-icon-next" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselStackedIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselStackedIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselStackedIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselStackedIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#carouselStackedIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+      <button type="button" data-bs-target="#carouselStackedIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+      <button type="button" data-bs-target="#carouselStackedIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+
+    </div>
+  </div>
+</div>
+       
+      
+
+
+
+
+
+  <!-- Cartões para acessar novidades, achadinhos e recomendações -->
+  <div class="container text-center home-featured-cards">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+        <div class="card" style="width: min(18rem, 100%);">
+          <div class="card-body">
+            <img src="./Novidades no mundo literário.jpg" class="card-img" alt="...">
+            <h5 class="mt-2 mb-0">Novidades</h5>
+            <p class="card-text fg-2">Aqui você vai encontrar todas as novidades do mundo literário</p>
+            <a class="card-link-button" href="./novidade.html">Novidades</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+        <div class="card" style="width: min(18rem, 100%);">
+          <div class="card-body">
+            <img src="./achadinhos.jpg" class="card-img" alt="...">
+            <h5 class="mt-2 mb-0">Achadinhos</h5>
+            <p class="card-text fg-2">Aqui você vai encontrar vários produtinhos para suas leituras</p>
+            <a class="card-link-button" href="./achadinhos.html">Achadinhos</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+        <div class="card" style="width: min(18rem, 100%);">
+          <div class="card-body">
+            <img src="./recomendações.jpg" class="card-img" alt="...">
+            <h5 class="mt-2 mb-0">Recomendação</h5>
+            <p class="card-text fg-2">Aqui tem várias recomendações de livros otimos</p>
+            <a class="card-link-button" href="./recomendacoes.html">Recomendação</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h2 class="home-section-title">Livros mais lidos</h2>
+
+  <!-- Cartões com resumos de livros -->
+  <div class="container text-center home-featured-cards">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+        <section class="card" style="width: 100%; max-width: 320px">
+          <img src="./Don Quixote.jpg" class="card-img-top resumo-img" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Don Quixote</h5>
+            <p class="card-text">Um dos melhores livros</p>
+            <a href="./resumo1.html" class="card-link-button">Don Quixote</a>
+          </div>
+        </section>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+        <section class="card" style="width: 100%; max-width: 320px">
+          <img src="./_Em busca do tempo perdido Vol_1_ No caminho de Swann_, Marcel Proust, _3_3_3_3_3.jpg"
+            class="card-img-top resumo-img" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Em busca do tempo perdido</h5>
+            <p class="card-text">Um dos melhores livros</p>
+            <a href="./resumo2.html" class="card-link-button">Em busca do tempo perdido</a>
+          </div>
+        </section>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+        <section class="card" style="width: 100%; max-width: 320px">
+          <img src="./1998 Portuguese edition of One Hundred Years of Solitude.jpg" class="card-img-top resumo-img"
+            alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Cem anos de solidão</h5>
+            <p class="card-text">Um dos melhores livros </p>
+            <a href="./resumo3.html" class="card-link-button">Cem anos de solidão</a>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+  <footer class="contact-footer">
+    <h2>Fale conosco</h2>
+    <p>Tem alguma dúvida ou sugestão? Entre em contato:</p>
+    <ul>
+      <li>Email: <a href="mailto:clubedolivroje@gmail.com">clubedolivroje@gmail.com</a></li>
+      <li>Contato 1: <a href="tel:+5518998854343">(18) 99885-4343</a></li>
+      <li>Contato 2: <a href="tel:+551899429876">(18) 9942-9876</a></li>
+    </ul>
+    <p class="copyright">© 2026 Clube do Livro. Todos os direitos reservados.</p>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Recursos interativos do Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>

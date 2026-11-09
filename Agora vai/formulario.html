@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <!-- Configurações, Bootstrap e estilos do site -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title class="titulo">Formulário de inscrição</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="./logo.css">
+  <link rel="stylesheet" href="./formulario.css">
+</head>
+<body class="corpo">
+  <!-- Menu de navegação -->
+  <ul class="nav justify-content-center">
+    <li class="nav-item">
+      <a class="nav-link active" aria-current="page" href="./home.html">Home</a>
+    </li>
+  </ul>
+
+  <!-- Formulário de inscrição; após validar, segue para a página do clube -->
+  <h1 class="titulo">Formulário de inscrição</h1>
+
+  <form onsubmit="window.location.href='./clube%20do%20livro.html'; return false;">
+    <!-- Dados pessoais do participante -->
+    <fieldset>
+      <legend>Dados pessoais</legend>
+
+      <p>
+        <label for="nome" >Nome/como quer ser chamado:</label><br>
+        <input class="inputNome"type="text" id="nome" name="nome" placeholder="Digite seu nome" required >
+      </p>
+
+      <p>
+        <label for="endereco">Endereço:</label><br>
+        <input  class="inputNome" type="text" id="endereco" name="endereco" placeholder="Digite seu endereço" required>
+      </p>
+
+      <p>
+        <label for="cidade">Cidade:</label><br>
+        <input class="inputNome" type="text" id="cidade" name="cidade" placeholder="Digite sua cidade" required>
+      </p>
+
+      <p>
+        <label for="telefone">Telefone:</label><br>
+        <input class="inputNome" type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone" required>
+      </p>
+
+      <p>
+        <label for="estado">Estado:</label><br>
+        <select id="estado" name="estado" required class="inputNome">
+          <option value="">Selecione seu estado</option>
+          <option value="AC">Acre</option>
+          <option value="AL">Alagoas</option>
+          <option value="AP">Amapá</option>
+          <option value="AM">Amazonas</option>
+          <option value="BA">Bahia</option>
+          <option value="CE">Ceará</option>
+          <option value="DF">Distrito Federal</option>
+          <option value="ES">Espírito Santo</option>
+          <option value="GO">Goiás</option>
+          <option value="MA">Maranhão</option>
+          <option value="MT">Mato Grosso</option>
+          <option value="MS">Mato Grosso do Sul</option>
+          <option value="MG">Minas Gerais</option>
+          <option value="PA">Pará</option>
+          <option value="PB">Paraíba</option>
+          <option value="PR">Paraná</option>
+          <option value="PE">Pernambuco</option>
+          <option value="PI">Piauí</option>
+          <option value="RJ">Rio de Janeiro</option>
+          <option value="RN">Rio Grande do Norte</option>
+          <option value="RS">Rio Grande do Sul</option>
+          <option value="RO">Rondônia</option>
+          <option value="RR">Roraima</option>
+          <option value="SC">Santa Catarina</option>
+          <option value="SP">São Paulo</option>
+          <option value="SE">Sergipe</option>
+          <option value="TO">Tocantins</option>
+        </select>
+      </p>
+
+      <p>
+        <label for="email">E-mail:</label><br>
+        <input class="inputNome" type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+      </p>
+    </fieldset>
+
+    <!-- Preferências e perfil de leitura -->
+    <fieldset>
+      <legend>Perfil de leitura</legend>
+
+      <p>
+        <label for="generos-favoritos">Quais são os seus gêneros literários favoritos?</label><br>
+        <textarea id="generos-favoritos" name="generos-favoritos" rows="2" cols="40" placeholder="Ex.: romance, fantasia, mistério" class="inputNome"></textarea>
+      </p>
+
+      <p>
+        <label for="generos-evitar">Quais gêneros ou temas você prefere evitar?</label><br>
+        <textarea id="generos-evitar" name="generos-evitar" rows="2" cols="40" placeholder="Se não houver, deixe em branco" class="inputNome"></textarea>
+      </p>
+
+      <p>
+        <label for="frequencia-leitura">Com que frequência você costuma ler?</label><br>
+        <select id="frequencia-leitura" name="frequencia-leitura" class="inputNome">
+          <option value="">Escolha uma opção</option>
+          <option value="todos-os-dias">Todos os dias</option>
+          <option value="algumas-vezes-semana">Algumas vezes por semana</option>
+          <option value="algumas-vezes-mes">Algumas vezes por mês</option>
+          <option value="raramente">Raramente</option>
+        </select>
+      </p>
+
+      <p>
+        <label for="livro-recomendado">Indique um livro que gostaria de ler com o clube:</label><br>
+        <input class="inputNome" type="text" id="livro-recomendado" name="livro-recomendado" placeholder="Título e autor, se souber">
+      </p>
+
+      <p>
+        <label for="sugestao">Tem alguma sugestão para o clube do livro?</label><br>
+        <textarea id="sugestao" name="sugestao" rows="3" cols="40" placeholder="Escreva sua sugestão aqui" class="inputNome"></textarea>
+      </p>
+    </fieldset>
+
+    <!-- Botões para enviar ou limpar as respostas -->
+    <p>
+      <button type="submit" class="home">Enviar</button>
+      <button type="reset" class="home">Limpar</button>
+    </p>
+  </form>
+  <!-- Recursos interativos do Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <footer class="contact-footer">
+    <h2>Fale conosco</h2>
+    <p>Tem alguma dúvida ou sugestão? Entre em contato:</p>
+    <ul>
+      <li>Email: <a href="mailto:clubedolivroje@gmail.com">clubedolivroje@gmail.com</a></li>
+      <li>Contato 1: <a href="tel:+5518998854343">(18) 99885-4343</a></li>
+      <li>Contato 2: <a href="tel:+551899429876">(18) 9942-9876</a></li>
+    </ul>
+    <p class="copyright">© 2026 Clube do Livro. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>

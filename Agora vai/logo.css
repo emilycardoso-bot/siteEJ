@@ -1,0 +1,172 @@
+body {
+  position: relative;
+}
+
+body.home-page {
+  background-color: rgb(255, 240, 246);
+}
+
+.home-nav {
+  width: 100%;
+  padding: 6px;
+  background-color: rgb(255, 215, 232);
+  border: 1px solid rgb(207, 102, 185);
+  border-radius: 8px;
+}
+
+.home-nav .nav-link {
+  color: rgb(105, 35, 85);
+  font-family: "Trebuchet MS", sans-serif;
+  font-weight: 600;
+}
+
+.home-nav .nav-link:hover,
+.home-nav .nav-link:focus,
+.home-nav .nav-link.active {
+  color: rgb(74, 20, 60);
+}
+
+.card-link-button {
+  display: inline-block;
+  padding: 10px 15px;
+  border-radius: 5px;
+  background-color: rgb(207, 102, 185);
+  color: white;
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.card-link-button:hover,
+.card-link-button:focus {
+  background-color: rgb(180, 75, 158);
+  color: white;
+}
+
+.home-featured-cards .card {
+  border: 1px solid rgb(207, 102, 185);
+  background-color: rgb(255, 215, 232);
+  color: rgb(105, 35, 85);
+  font-family: "Trebuchet MS", sans-serif;
+}
+
+.home-section-title {
+  width: min(100% - 32px, 960px);
+  margin: 36px auto 20px;
+  padding: 6px;
+  border: 1px solid rgb(207, 102, 185);
+  border-radius: 8px;
+  background-color: rgb(255, 215, 232);
+  color: rgb(105, 35, 85);
+  font-family: "Trebuchet MS", sans-serif;
+  text-align: center;
+}
+
+#carouselStackedIndicators {
+  margin-top: 20px;
+}
+
+#carouselStackedIndicators .carousel-inner {
+  height: 420px;
+  background-color: rgb(255, 240, 246);
+}
+
+#carouselStackedIndicators .carousel-item {
+  height: 100%;
+}
+
+.site-logo {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  z-index: 1030;
+  display: block;
+  width: 100px;
+  height: 100px;
+}
+
+.site-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.carousel-img {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+  object-fit: contain;
+}
+
+#carouselStackedIndicators .carousel-img[src$="o.jpg"] {
+  mix-blend-mode: multiply;
+}
+
+@media (max-width: 600px) {
+  #carouselStackedIndicators .carousel-inner {
+    height: 260px;
+  }
+}
+
+.resumo-img {
+  height: 260px;
+  object-fit: contain;
+}
+.footer{
+  background-color: rgb(255, 240, 246);
+}
+
+.contact-footer {
+  grid-column: 1 / -1;
+  margin-top: 32px;
+  padding: 22px 16px;
+  border-top: 3px double rgb(105 35 85 / 65%);
+  background-color: rgb(255, 240, 246);
+  color: #554750;
+  font-family: "Trebuchet MS", sans-serif;
+  text-align: center;
+}
+
+.contact-footer h2 {
+  margin: 0 0 8px;
+  color: rgb(74, 20, 60);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.4rem;
+}
+
+.contact-footer p {
+  margin: 0 0 12px;
+}
+
+.contact-footer ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px 26px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.contact-footer a {
+  color: rgb(105, 35, 85);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.contact-footer a:hover,
+.contact-footer a:focus {
+  color: rgb(74, 20, 60);
+}
+
+.contact-footer .copyright {
+  margin: 18px 0 0;
+  color: #806b77;
+  font-size: 0.85rem;
+}
